@@ -4,10 +4,10 @@ class Solution {
     string reverseString(string& s) {
         // code here
         int n = s.length();
-        string result = "";
-        for(int i=n-1;i>=0;i--){
-            result+=s[i];
+        string str(n,0);
+        for(int i=0;i<n;i++){
+            str[i] = s[n-i-1];
         }
-        return result;
+        return str;
     }
 };
